@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap');
 /* ==============================
    Reset
 ============================== */
@@ -59,9 +61,7 @@ button {
   cursor: pointer;
 }
 
-body {
-  min-height: 100vh;
-}
+
 
 
 /* ==============================
@@ -73,12 +73,35 @@ body {
     --color-bg: #f7f5f2;
     --color-text: #333;
     --container-width:1200px;
-    --font-serif:'Noto Sans JP',yu mincho, serif;
+    --font-serif:'Noto Serif JP',yu mincho, serif;
     --font-sans:'Noto Sans JP',yu gothic, sans-serif;
     --font-size-base:16px;
     --font-size-sm:14px;
     --font-size-xs:12px;
 }
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    font-size:var(--font-size-base);
+  }
+
+.pc_only{
+    display: block;
+}
+.sp_only{
+    display: none;
+}
+
+@media (max-width: 767px) {
+   .pc_only{
+        display: none;
+    }
+    .sp_only{
+        display: block;
+    }
+}
+
 
 /* ==============================
    Components
@@ -90,6 +113,39 @@ body {
 /* ==============================
    Header
 ============================== */
+.site-header{
+  max-width: var(--container-width);
+  width:100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 5%;
+
+}
+
+.site-header__logo-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.site-header__logo-text{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-serif);
+}
+
+.site-header__nav-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:16px;
+}
+
+.site-header__nav-link{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
 
 
 /* ==============================
