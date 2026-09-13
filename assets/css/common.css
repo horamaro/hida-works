@@ -74,6 +74,7 @@ button {
     --color-text: #333;
     --color-text-sub:#999;
     --container-width:1200px;
+    --color-border: #ccc;
     --font-serif:'Noto Serif JP',yu mincho, serif;
     --font-sans:'Noto Sans JP',yu gothic, sans-serif;
     --font-size-base:16px;
@@ -153,7 +154,7 @@ body{
 }
 .c-section-heading__ja{
     display: block;
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     color: var(--color-text);
 }
 
@@ -218,5 +219,27 @@ body{
 
 
 /* ==============================
-   About
+   Footer
 ============================== */
+
+footer{
+    max-width: var(--container-width);
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color:var(--color-main);
+    flex-direction: column;
+  
+  }
+
+
+  .site-footer__sns-list img{
+    width:24px;
+    height:auto;
+  }
+
+  .site-footer__sns-list{
+    display: flex;
+  }
