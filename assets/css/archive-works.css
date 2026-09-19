@@ -1,0 +1,39 @@
+
+
+.works-archive{
+    width:100%;
+    max-width: var(--container-width);
+    margin: 0 auto 80px;
+    padding-inline: var(--side-padding-pc);    
+}
+
+.works-archive__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:80px;
+
+}
+
+.works-archive__catch{
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.works-archive__lead{
+    margin-bottom: 24px;   
+}
+
+
+/* ==============================
+   SP
+============================== */
+
+
+@media (max-width: 767px){
+    .works-archive__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:40px;
+    
+    }   
+}

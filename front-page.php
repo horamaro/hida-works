@@ -43,11 +43,14 @@
 </section>
 
 <section class="about">
-    <div class="about__image-main">
+    <div class="about__image-main pc_only">
     <img src="https://placehold.co/400x400" alt="">
     </div>
     <div class="about__body">
     <h2 class="c-section-heading about__heading">About<span class="c-section-heading__ja">Hida Worksについて</span></h2>
+    <div class="about__image-main sp_only">
+    <img src="https://placehold.co/400x400" alt="">
+    </div>
     <p class="about__catch">この地域の、<br>
     これからの暮らしをつくる。</p>    
     <div class="about__content">
@@ -124,76 +127,75 @@
 
     <div class="works__list">
 
-        <a href="#" class="works__card">
-            <div class="works__image">
+        <a href="#" class="c-works__card">
+            <div class="c-works__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
-            <div class="works__body">
-            <h3 class="works__title">やすらぎの家</h3>
-            <div class="works__meta">
-             <span class="works__category">新築住宅</span>
-             <span class="works__area">高山市</span>                     
+            <div class="c-works__body">
+            <h3 class="c-works__title">やすらぎの家</h3>
+            <div class="c-works__meta">
+             <span class="c-works__category">新築住宅</span>
+             <span class="c-works__area">高山市</span>                     
             </div>
             </div>
         </a>
-        <a href="#" class="works__card">
-            <div class="works__image">
+        <a href="#" class="c-works__card">
+            <div class="c-works__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
-            <div class="works__body">
-            <h3 class="works__title">やすらぎの家</h3>
-            <div class="works__meta">
-             <span class="works__category">新築住宅</span>
-             <span class="works__area">高山市</span>                     
+            <div class="c-works__body">
+            <h3 class="c-works__title">やすらぎの家</h3>
+            <div class="c-works__meta">
+             <span class="c-works__category">新築住宅</span>
+             <span class="c-works__area">高山市</span>                     
             </div>
             </div>
         </a>
-        <a href="#" class="works__card">
-            <div class="works__image">
+        <a href="#" class="c-works__card">
+            <div class="c-works__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
-            <div class="works__body">
-            <h3 class="works__title">やすらぎの家</h3>
-            <div class="works__meta">
-             <span class="works__category">新築住宅</span>
-             <span class="works__area">高山市</span>                     
+            <div class="c-works__body">
+            <h3 class="c-works__title">やすらぎの家</h3>
+            <div class="c-works__meta">
+             <span class="c-works__category">新築住宅</span>
+             <span class="c-works__area">高山市</span>                     
             </div>
             </div>
         </a>
-        <a href="#" class="works__card">
-            <div class="works__image">
+        <a href="#" class="c-works__card">
+            <div class="c-works__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
-            <div class="works__body">
-            <h3 class="works__title">やすらぎの家</h3>
-            <div class="works__meta">
-             <span class="works__category">新築住宅</span>
-             <span class="works__area">高山市</span>                     
+            <div class="c-works__body">
+            <h3 class="c-works__title">やすらぎの家</h3>
+            <div class="c-works__meta">
+             <span class="c-works__category">新築住宅</span>
+             <span class="c-works__area">高山市</span>                     
             </div>
             </div>
-        </a>                    
-        <a href="#" class="works__card">
-            <div class="works__image">
+        </a>                 
+        <a href="#" class="c-works__card">
+            <div class="c-works__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
-            <div class="works__body">
-            <h3 class="works__title">やすらぎの家</h3>
-            <div class="works__meta">
-             <span class="works__category">新築住宅</span>
-             <span class="works__area">高山市</span>                     
+            <div class="c-works__body">
+            <h3 class="c-works__title">やすらぎの家</h3>
+            <div class="c-works__meta">
+             <span class="c-works__category">新築住宅</span>
+             <span class="c-works__area">高山市</span>                     
             </div>
             </div>
         </a>
-
-        <a href="#" class="works__card">
-            <div class="works__image">
+        <a href="#" class="c-works__card">
+            <div class="c-works__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
-            <div class="works__body">
-            <h3 class="works__title">やすらぎの家</h3>
-            <div class="works__meta">
-             <span class="works__category">新築住宅</span>
-             <span class="works__area">高山市</span>                     
+            <div class="c-works__body">
+            <h3 class="c-works__title">やすらぎの家</h3>
+            <div class="c-works__meta">
+             <span class="c-works__category">新築住宅</span>
+             <span class="c-works__area">高山市</span>                     
             </div>
             </div>
         </a>
@@ -327,8 +329,8 @@
     <div class="contact__main">
     <div class="contact__inner">    
     <h2 class="c-section-heading contact__heading">contact<span class="c-section-heading__ja">私たちの家づくり</span></h2>
-    <p class="contact__catch">自然と、<br>
-    人と、未来をつなぐ。
+    <p class="contact__catch">家づくりのこと、<br>    
+    お気軽にご相談ください。
     </p>    
     <a class="c-link-btn" href="<?php echo home_url(); ?>/about">私たちの想いを見る</a>
     </div>   
