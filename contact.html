@@ -1,0 +1,51 @@
+
+
+
+
+<div class="contact-form">
+
+    <div class="contact-form__item">
+        <div class="contact-form__head">
+            <label for="your-name" class="contact-form__label"> お名前<span class="contact-form__required">必須</span>
+            </label>
+        </div>
+        <div class="contact-form__input">
+              [text* your-name id:your-name autocomplete:name placeholder "例）山田 太郎"] 
+        </div>
+    </div>
+
+    <div class="contact-form__item">
+        <div class="contact-form__head">
+            <label for="your-email" class="contact-form__label"> メールアドレス<span class="contact-form__required">必須</span>
+            </label>
+        </div>
+        <div class="contact-form__input">
+              [email* your-email id:your-email autocomplete:email placeholder "例）yamada@email.com"] 
+        </div>
+    </div>    
+
+    <div class="contact-form__item">
+        <div class="contact-form__head">
+            <label for="your-tel" class="contact-form__label"> 電話番号<span></span>
+            </label>
+        </div>
+        <div class="contact-form__input">
+              [tel your-tel id:your-tel placeholder "例）0000-000-0000"] 
+        </div>
+    </div>
+    
+    <div class="contact-form__item">
+        <div class="contact-form__head">
+            <label for="your-message" class="contact-form__label"> お問い合わせ内容<span class="contact-form__required">必須</span>
+            </label>
+        </div>
+        <div class="contact-form__input">
+              [textarea* your-message id:your-message placeholder "メッセージをご記入ください。"] 
+        </div>
+    </div>   
+   
+    <div class="contact-form__submit">
+    [submit "送信する"]
+    </div>
+    
+    </div>

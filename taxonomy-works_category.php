@@ -74,4 +74,6 @@ $slug = $term->slug;
 
 </main>
 
+<?php get_template_part('template-parts/contact'); ?>
+
 <?php get_footer(); ?>

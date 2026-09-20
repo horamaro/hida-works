@@ -167,10 +167,45 @@ function hida_works_page_styles(){
       );
   }
 
+  if(is_page('services')){
+    wp_enqueue_style(
+        'hida-works-services',
+        get_template_directory_uri() .'/assets/css/page-services.css',
+        array('hida_works_style')
+    );
+  } 
+
+
+  if(is_home()){
+    wp_enqueue_style(
+        'hida-works-home',//投稿用
+        get_template_directory_uri() .'/assets/css/home.css',
+        array('hida_works_style')
+    );
+  } 
+  
+  if (is_singular('post')) {
+    wp_enqueue_style(
+        'hida-works-single',//投稿用
+        get_template_directory_uri() .'/assets/css/single.css',
+        array('hida_works_style')
+    );
+  }    
+
+  if(is_page('contact')){
+    wp_enqueue_style(
+        'hida-works-contact',
+        get_template_directory_uri() .'/assets/css/page-contact.css',
+        array('hida_works_style')
+    );
+  } 
+
+
 }
 add_action(
     'wp_enqueue_scripts',
-    'hida_works_page_styles'
+    'hida_works_page_styles',
+    'hida-works-services'
 );
 
 

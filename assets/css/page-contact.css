@@ -1,0 +1,101 @@
+.contact__inner{
+    width:100%;
+    max-width: var(--container-width);
+    padding-inline: var(--side-padding-pc);
+    margin: 0 auto 80px;  
+}
+
+.contact-form__input p {
+    margin: 0;
+    width: 100%;
+}
+
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    background-color: var(--color-bg);
+    padding: 40px;
+}
+
+.contact-form__head{
+    padding: 4px 0;
+}
+
+.contact-form__item {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    max-width: 800px;
+    width:100%;
+    gap:24px;
+    margin: 0 auto;
+}
+
+.wpcf7-form-control-wrap{
+    width:100%;
+    display: block;
+}
+.contact-form__input
+{
+    width:100%;
+    box-sizing: border-box;
+}
+.contact-form__input input,
+.contact-form__input textarea {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    border:1px solid var(--color-border);
+    padding: 4px 0;
+}
+.contact-form__label{
+    display: grid;
+    grid-template-columns: 1fr 80px;
+
+}
+
+.contact-form__required{
+    text-align: center;
+    background-color: rgb(207, 3, 3);
+    color:#fff;
+
+}
+
+
+
+.contact__inner .wpcf7-submit{
+    display: block; /*横幅いっぱいじゃなく*/ 
+    gap:24px;
+    border: 1px solid var(--color-main);
+    padding: 16px 24px;
+    background-color: var(--color-main);
+    color: #fff;
+    width:240px;
+    margin: 0 auto;
+    cursor: pointer;
+
+   }
+
+/* ==============================
+   SP
+============================== */
+
+
+@media (max-width: 767px){
+   .contact-form__item {
+    grid-template-columns: 1fr;
+    gap:4px;
+}
+
+.contact-form__label{
+    display: flex;
+    justify-content: flex-start;
+}
+.contact-form__required{
+    display: inline-block;
+    width:80px;
+    margin-left: 64px;
+}
+
+}

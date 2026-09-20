@@ -79,7 +79,7 @@
     </div>
 
     <div class="service__list">
-        <a href="<?php echo home_url(); ?>/services/new-house/" class="service__card">
+        <a href="<?php echo home_url(); ?>/services#new-house" class="service__card">
             <div class="service__image">
             <img src="https://placehold.co/500x300" alt="">
             </div>
@@ -91,26 +91,26 @@
             </div>
         </a>
 
-        <a href="<?php echo home_url(); ?>/services/new-house/" class="service__card">
+        <a href="<?php echo home_url(); ?>/services#renovation" class="service__card">
             <div class="service__image">
             <img src="https://placehold.co/500x300" alt="">
             </div>
             <div class="service__body">
-            <h3 class="service__title">新築住宅<span class="service__title-en">New House</span></h3>
-            <p class="service__text">飛騨の気候と風土に合った、<br>
-                永く愛される木の家をつくります</p>
+            <h3 class="service__title">リフォーム<span class="service__title-en">Renovation</span></h3>
+            <p class="service__text">住み慣れた家の良さを活かしながら、<br>
+            今の暮らしに合った快適な空間へ整えます。</p>
             <span class="service__arrow">→<span>           
             </div>
         </a>
 
-        <a href="<?php echo home_url(); ?>/services/new-house/" class="service__card">
+        <a href="<?php echo home_url(); ?>/services#shop" class="service__card">
             <div class="service__image">
             <img src="https://placehold.co/500x300" alt="">
             </div>
             <div class="service__body">
-            <h3 class="service__title">新築住宅<span class="service__title-en">New House</span></h3>
-            <p class="service__text">飛騨の気候と風土に合った、<br>
-                永く愛される木の家をつくります</p>
+            <h3 class="service__title">店舗施工<span class="service__title-en">Shop Construction</span></h3>
+            <p class="service__text">飲食店やカフェ、ショップなど、<br>
+            その場所ならではの魅力を活かした空間をつくります。</p>
             <span class="service__arrow">→<span>                        
             </div>
         </a>
@@ -122,83 +122,56 @@
 <section class="works">
     <div class="works__header">
     <h2 class="c-section-heading">Works<span class="c-section-heading__ja">施工事例</span></h2>
-    <a href="#" class="works__link">全ての施工事例を見る</a>
+    <a class="c-link-btn" href="<?php echo home_url(); ?>/works" class="works__link">すべて見る</a>
     </div>
+
+    <?php
+    $works_query = new WP_Query(
+        array(
+            'post_type'      => 'works',
+            'posts_per_page' => 5,
+        )
+    );
+    ?>    
 
     <div class="works__list">
 
-        <a href="#" class="c-works__card">
+    <?php while ($works_query->have_posts()) : $works_query->the_post(); ?>
+
+        <a href="<?php the_permalink(); ?>" class="c-works__card">
             <div class="c-works__image">
-            <img src="https://placehold.co/400x300" alt="">
+                <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large'); ?>
+                <?php endif; ?>
             </div>
             <div class="c-works__body">
-            <h3 class="c-works__title">やすらぎの家</h3>
-            <div class="c-works__meta">
-             <span class="c-works__category">新築住宅</span>
-             <span class="c-works__area">高山市</span>                     
-            </div>
+                <h3 class="c-works__title"><?php the_title(); ?></h3>
+                <div class="c-works__meta">
+                    <span class="c-works__category">
+                    <?php
+                    $terms = get_the_terms(get_the_ID(), 'works_category');
+
+                    if ($terms && !is_wp_error($terms)) {
+                        echo esc_html($terms[0]->name);
+                    }
+                    ?>
+                    </span>
+                    <span class="c-works__area">
+                    <?php
+                    $terms = get_the_terms(get_the_ID(), 'works_area');
+
+                    if ($terms && !is_wp_error($terms)) {
+                        echo esc_html($terms[0]->name);
+                    }
+                    ?>
+                    </span>                     
+                </div>
             </div>
         </a>
-        <a href="#" class="c-works__card">
-            <div class="c-works__image">
-            <img src="https://placehold.co/400x300" alt="">
-            </div>
-            <div class="c-works__body">
-            <h3 class="c-works__title">やすらぎの家</h3>
-            <div class="c-works__meta">
-             <span class="c-works__category">新築住宅</span>
-             <span class="c-works__area">高山市</span>                     
-            </div>
-            </div>
-        </a>
-        <a href="#" class="c-works__card">
-            <div class="c-works__image">
-            <img src="https://placehold.co/400x300" alt="">
-            </div>
-            <div class="c-works__body">
-            <h3 class="c-works__title">やすらぎの家</h3>
-            <div class="c-works__meta">
-             <span class="c-works__category">新築住宅</span>
-             <span class="c-works__area">高山市</span>                     
-            </div>
-            </div>
-        </a>
-        <a href="#" class="c-works__card">
-            <div class="c-works__image">
-            <img src="https://placehold.co/400x300" alt="">
-            </div>
-            <div class="c-works__body">
-            <h3 class="c-works__title">やすらぎの家</h3>
-            <div class="c-works__meta">
-             <span class="c-works__category">新築住宅</span>
-             <span class="c-works__area">高山市</span>                     
-            </div>
-            </div>
-        </a>                 
-        <a href="#" class="c-works__card">
-            <div class="c-works__image">
-            <img src="https://placehold.co/400x300" alt="">
-            </div>
-            <div class="c-works__body">
-            <h3 class="c-works__title">やすらぎの家</h3>
-            <div class="c-works__meta">
-             <span class="c-works__category">新築住宅</span>
-             <span class="c-works__area">高山市</span>                     
-            </div>
-            </div>
-        </a>
-        <a href="#" class="c-works__card">
-            <div class="c-works__image">
-            <img src="https://placehold.co/400x300" alt="">
-            </div>
-            <div class="c-works__body">
-            <h3 class="c-works__title">やすらぎの家</h3>
-            <div class="c-works__meta">
-             <span class="c-works__category">新築住宅</span>
-             <span class="c-works__area">高山市</span>                     
-            </div>
-            </div>
-        </a>
+
+<?php endwhile; ?>
+<?php wp_reset_postdata(); ?>
+
  </div>
 </section> 
     
@@ -225,7 +198,7 @@
     <div class="concept__side">
     <div class="concept__list">
 
-        <a href="#" class="concept__card">
+        <div class="concept__card">
             <div class="concept__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
@@ -238,8 +211,8 @@
             次の世代へつなぎます。                   
             </p>
             </div>
-        </a>
-        <a href="#" class="concept__card">
+        </div>
+        <div class="concept__card">
             <div class="concept__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
@@ -251,8 +224,8 @@
             心地よい住まいを提案します。               
             </p>
             </div>
-        </a>
-        <a href="#" class="concept__card">
+        </div>
+        <div class="concept__card">
             <div class="concept__image">
             <img src="https://placehold.co/400x300" alt="">
             </div>
@@ -264,7 +237,7 @@
             もっと豊かになる建築をつくり続けます。                   
             </p>
             </div>
-        </a>               
+        </div>               
         </div>
  </div>
 </section>
@@ -283,32 +256,28 @@
     </div>
 
     <div class="news__body">
-
+        <?php
+        $news_query = new WP_Query(
+            array(
+                'post_type'      => 'post',
+                'posts_per_page' => 3,
+            )
+        );
+        ?>
         <ul class="news__list">
-
+        
+        <?php if ($news_query->have_posts()): ?>
+            <?php while ($news_query->have_posts()) : $news_query->the_post();?>
             <li class="news__item">
-                <a href="#" class="news__item-link">
-                    <span class="news__date">2024.10.28</span>
+                <a href="<?php the_permalink(); ?>" class="news__item-link">
+                    <span class="news__date"><?php echo get_the_date('Y.m.d'); ?></span>
                     <span class="news__category">お知らせ</span>
-                    <p class="news__title">年末年始の営業について</p>
+                    <p class="news__title"><?php the_title(); ?></p>
                 </a>
             </li>
+            <?php endwhile; ?>
+        <?php endif; ?>    
 
-            <li class="news__item">
-                <a href="#" class="news__item-link">
-                    <span class="news__date">2024.10.28</span>
-                    <span class="news__category">お知らせ</span>
-                    <p class="news__title">年末年始の営業について</p>
-                </a>
-            </li>
-
-            <li class="news__item">
-                <a href="#" class="news__item-link">
-                    <span class="news__date">2024.10.28</span>
-                    <span class="news__category">お知らせ</span>
-                    <p class="news__title">年末年始の営業について</p>
-                </a>
-            </li>
         </ul>
 
         <div class="news__visual">
@@ -324,17 +293,6 @@
     </div>
 </section> 
 
-<section class="contact">
+<?php get_template_part('template-parts/contact'); ?>
 
-    <div class="contact__main">
-    <div class="contact__inner">    
-    <h2 class="c-section-heading contact__heading">contact<span class="c-section-heading__ja">私たちの家づくり</span></h2>
-    <p class="contact__catch">家づくりのこと、<br>    
-    お気軽にご相談ください。
-    </p>    
-    <a class="c-link-btn" href="<?php echo home_url(); ?>/about">私たちの想いを見る</a>
-    </div>   
-
-    </div>
-</section>
 <?php get_footer(); ?>

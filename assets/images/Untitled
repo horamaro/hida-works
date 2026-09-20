@@ -1,7 +1,7 @@
-        if ($image_id) {
-            echo wp_get_attachment_image(
-                $image_id, 
-                'large',
-                array('class' => 'js-works-thumbnail')                   
-            );
-        }
+人とまちをつなぐ、心地よい場所を。
+
+飲食店やカフェ、ショップなど、
+その場所ならではの魅力を活かした空間をつくります。
+
+デザインだけでなく使いやすさや動線にも配慮し、
+訪れる人にも働く人にも心地よい店舗を目指します。

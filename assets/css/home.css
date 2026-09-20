@@ -1,0 +1,37 @@
+
+.news{
+    margin-bottom: 48px;
+}
+.news__inner {
+    width: 100%;
+    max-width: var(--container-width);
+    padding-inline: var(--side-padding-pc);
+    margin: 0 auto;
+}
+
+.news__heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news__list {
+    border-top: 1px solid var(--color-border);
+}
+
+.news__item {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.news__link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
+
+}
+
+
+.news__title {
+    font-size: 1rem;
+    font-weight: 400;
+}

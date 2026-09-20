@@ -150,7 +150,11 @@ body{
     font-family: var(--font-serif);
 }
 /* ボタン・共通見出しなど */
-/*リンクボタン*/
+
+
+/* ==============================
+   リンクボタン
+============================== */
 .c-link-btn{
  display: inline-flex; /*横幅いっぱいじゃなく*/ 
  gap:24px;
@@ -163,7 +167,10 @@ body{
 .c-link-btn::after{
     content:"→";
 }
-/*中見出し*/
+
+/* ==============================
+   中見出し
+============================== */
 .c-section-heading{
     color: var(--color-main);
     font-size: 1.625rem;
@@ -330,7 +337,7 @@ body{
 /* ==============================
    page-hero
 ============================== */
-.c-page-hero{
+.c-page-hero__visual{
     position: relative;
     width:100%;
     margin: 0 auto 48px;
@@ -358,7 +365,8 @@ body{
 .c-page-hero__image img{
     object-fit: cover;
     height: 100%;
-    width:100%;      
+    width:100%;
+    object-position: center;      
 }
 
 .c-page-hero__inner{
@@ -388,6 +396,26 @@ body{
     font-weight: 600;
 }
 
+/* ==============================
+   intro
+============================== */
+.c-page__intro{
+    width:100%;
+    max-width: var(--container-width);
+    padding-inline: var(--side-padding-pc);
+    margin: 0 auto 48px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.c-page__catch{
+    font-size:2.5rem ;
+    font-weight: 600;
+    line-height: 1.8;
+}
+.c-page__lead{
+    line-height: 1.8;    
+}
 
 
   /* ==============================
@@ -442,6 +470,67 @@ body{
      background-color: var(--color-main);
  }
 
+/* ==============================
+   contact
+============================== */
+.c-contact{ 
+    margin-bottom: 48px;
+}
+.c-contact__main{
+    position: relative;
+    background-image: url("../images/contact-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.c-contact__main::before{
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.4);    
+}
+
+.c-contact__main > * {
+    position: relative;
+    z-index: 1;
+}
+.c-contact__inner{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap:24px;
+    max-width:var(--container-width);
+    margin: 0 auto;
+    justify-content: center;
+    height: 100%;
+    padding: 32px 0;
+    padding-inline: var(--side-padding-pc);
+}
+
+.c-contact__inner .c-section-heading,
+.c-contact__inner .c-section-heading__ja,
+.c-contact__inner .c-link-btn
+{
+    color: #fff;
+}
+
+.c-contact__catch{
+    font-size:1.625rem ;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.c-contact__inner .c-link-btn{
+    border-color: #fff;
+    align-self: center;
+}
+.c-contact .c-link-btn{
+    background-color: var(--color-main);
+}
   
 /* ==============================
    SP
@@ -539,7 +628,7 @@ body{
         bottom: 0;
         right:0;
         background-color: #fff;
-        z-index: 9;
+        z-index: 99;
         padding:40px;
         opacity: 0;
         visibility: hidden;
@@ -573,7 +662,7 @@ body{
         left:50%;
         transform: translate( -50% , 0);
         font-size:1.5rem ;
-        line-height: 180%;
+        line-height: 1.8;
         color:#fff;
         width:80%;
         text-align: center;
@@ -590,7 +679,6 @@ body{
         justify-content: center;
       }
 
-
     .site-header__sp-nav-list{
       display: flex;
       flex-direction: column;
@@ -600,12 +688,17 @@ body{
       font-weight: 700;
       margin-bottom: 48px;
     }
+    .site-header__sp-nav-list li{
+        width:100%;
+
+      }
     
     .site-header__sp-nav-link{
-        display: flex;
-        flex-direction: column;
+       display: flex;
+       flex-direction: column;
        align-items: center;
        letter-spacing: 0.08em;
+       width:100%;
     
     }
     .site-header__sp-nav-link span{
@@ -646,7 +739,7 @@ body{
     }
 
     /* sp-page-hero */
-    .c-page-hero{
+    .c-page-hero__visual{
         height:calc(100svh - 56px);
     }
 
@@ -656,12 +749,79 @@ body{
     }
 
     /* sp-works list */
-    .c-works__list {
-        grid-template-columns: 1fr;
-        padding: 0 var(--side-padding-sp);             
+
+    /* sp-contact */
+    .c-contact__inner {
+        padding: 48px var(--side-padding-sp); 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-
+    .c-contact .c-link-btn{
+        align-self: flex-start;
+        display: inline-flex;
+    }
 
 }
 
+/*テスト用*/
+.c-image-test{
+    width:100%;
+    max-width: var(--container-width);
+    padding-inline: var(--side-padding-pc);
+    margin: 0 auto 48px;   
+}
+
+.c-massage-test{
+    width:100%;
+    max-width: var(--container-width);
+    padding-inline: var(--side-padding-pc);
+    margin: 0 auto 80px;  
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.c-company-test{
+    width:100%;
+    max-width: var(--container-width);
+    padding: 64px var(--side-padding-pc);
+    margin: 0 auto 80px;
+    background-color: var(--color-bg);
+}
+
+.c-company-test__title{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.c-company-test__table{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+
+}
+.c-company-test__row{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap:40px;
+    padding: 16px 0;
+    width:60%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 767px) {
+    .c-company-test__row{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0;
+        gap:8px;
+        width:100%;
+    }
+    .c-company-test__table{
+        gap:16px;
+    
+    }
+}

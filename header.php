@@ -36,7 +36,7 @@
 
     <nav class="site-header__sp-nav">
     <ul class="site-header__sp-nav-list">
-    <li><a href="<?php echo home_url(); ?>/about" class="site-header__sp-nav-link">About<span>会社概要</span></a></li>
+        <li><a href="<?php echo home_url(); ?>/about" class="site-header__sp-nav-link">About<span>会社概要</span></a></li>
         <li><a href="<?php echo home_url(); ?>/services" class="site-header__sp-nav-link">Services<span>サービス</span></a></li>
         <li><a href="<?php echo home_url(); ?>/works" class="site-header__sp-nav-link">Works<span>施工事例</span></a></li>
         <li><a href="<?php echo home_url(); ?>/news" class="site-header__sp-nav-link">News<span>お知らせ</span></a></li>

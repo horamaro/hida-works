@@ -41,7 +41,7 @@
 
 .hero__lead{
     font-size:1.25rem;
-    line-height: 180%;
+    line-height: 1.8;
     opacity: 0.7;    
 }
 
@@ -90,7 +90,7 @@
 .about__catch{
     font-size:1.625rem ;
     font-weight: 600;
-    line-height: 180%;
+    line-height: 1.8;
 }
 
 .about__image{
@@ -138,7 +138,7 @@
 .service__discription{
     font-size: 1.25rem;
     font-weight: 600;
-    line-height: 180%;
+    line-height: 1.8;
 }
 
 .service__list{
@@ -218,7 +218,7 @@
 }
 .works__list{
     display:grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap:24px;  
  }
 
@@ -273,7 +273,7 @@
 .concept__catch{
     font-size:1.625rem ;
     font-weight: 600;
-    line-height: 180%;
+    line-height: 1.8;
 }
 
 .concept__inner .c-link-btn{
@@ -364,7 +364,7 @@
 .news__visual-copy{
     font-size:1.25rem ;
     font-weight: 600;
-    line-height: 180%;
+    line-height: 1.8;
     margin-bottom: 8px;
 }
 
@@ -380,67 +380,6 @@
     text-align: center;
 }
 
-/* ==============================
-   contact
-============================== */
-.contact{ 
-    margin-bottom: 48px;
-}
-.contact__main{
-    position: relative;
-    background-image: url("../images/contact-bg.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-}
-.contact__main::before{
-    content: "";
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
-    background-color: rgba(0, 0, 0, 0.4);    
-}
-
-.contact__main > * {
-    position: relative;
-    z-index: 1;
-}
-.contact__inner{
-    display:grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    gap:24px;
-    max-width:var(--container-width);
-    margin: 0 auto;
-    justify-content: center;
-    height: 100%;
-    padding: 32px 0;
-    padding-inline: var(--side-padding-pc);
-}
-
-.contact__inner .c-section-heading,
-.contact__inner .c-section-heading__ja,
-.contact__inner .c-link-btn
-{
-    color: #fff;
-}
-
-.contact__catch{
-    font-size:1.625rem ;
-    font-weight: 600;
-    line-height: 180%;
-}
-
-.contact__inner .c-link-btn{
-    border-color: #fff;
-    align-self: center;
-}
-.contact .c-link-btn{
-    background-color: var(--color-main);
-}
 
 
 /* ==============================
@@ -484,7 +423,7 @@
     .about__catch{
         font-size:1.625rem ;
         font-weight: 600;
-        line-height: 180%;
+        line-height: 1.8;
         font-size:1.5rem ;
     }
 
@@ -504,6 +443,11 @@
     /* sp-works list */
     .works__header{
         padding: 0 var(--side-padding-sp);        
+    }
+
+    .works__list {
+        grid-template-columns: 1fr;
+        padding: 0 var(--side-padding-sp);             
     }
 
     /* sp-concept */
@@ -558,18 +502,7 @@
     }
 
 
-    /* sp-contact */
-    .contact__inner {
-        padding: 48px var(--side-padding-sp); 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .contact .c-link-btn{
-        align-self: flex-start;
-        display: inline-flex;
-    }
 }
 
 /*替えるか追加*/
