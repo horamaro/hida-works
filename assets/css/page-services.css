@@ -77,6 +77,8 @@
 /* ==============================
    SP
 ============================== */
+@media (max-width: 767px) {
+
 
     /* sp-list */
 
@@ -91,4 +93,6 @@ flex-direction: column-reverse;
 
 .services__content {
     width: 100%;
+}
+
 }
