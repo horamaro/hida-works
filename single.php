@@ -20,7 +20,7 @@
 
 
 <main class="news-single">
-    <article class="news-single__inner">
+    <article class="news-single__inner js-scroll is-fadeup">
 
     <?php if (have_posts()) : ?>
        <?php while (have_posts()) : the_post(); ?>

@@ -42,7 +42,7 @@
 </div>    
 </section>
 
-<section class="about">
+<section class="about js-scroll is-fadeup">
     <div class="about__image-main pc_only">
     <img src="https://placehold.co/400x400" alt="">
     </div>
@@ -65,12 +65,12 @@
     </div>    
     <div class="about__image">
     <div  class="about__image-sub"><img src="https://placehold.co/200x160" alt=""></div>
-    <img class="about__image-message" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-message.png" alt="">   
+    <img class="about__image-message js-scroll " src="<?php echo get_template_directory_uri(); ?>/assets/images/about-message.png" alt="">   
     </div>
 
 </section> 
 
-<section class="service">
+<section class="service js-scroll is-fadeup">
   <div class="service__inner">  
     <div class="service__heading">
     <h2 class="c-section-heading about__heading">Service<span class="c-section-heading__ja">事業内容</span></h2>
@@ -119,7 +119,7 @@
 </div>
 </section> 
 
-<section class="works">
+<section class="works js-scroll is-fadeup">
     <div class="works__header">
     <h2 class="c-section-heading">Works<span class="c-section-heading__ja">施工事例</span></h2>
     <a class="c-link-btn" href="<?php echo home_url(); ?>/works" class="works__link">すべて見る</a>
@@ -175,7 +175,7 @@
  </div>
 </section> 
     
-<section class="concept">
+<section class="concept js-scroll is-fadeup">
 
     <div class="concept__main">
     <div class="concept__inner">    
@@ -242,7 +242,7 @@
  </div>
 </section>
 
-<section class="news">
+<section class="news js-scroll is-fadeup">
 
     <div class="news__header">
         <h2 class="c-section-heading">

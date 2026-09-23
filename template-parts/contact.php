@@ -1,4 +1,4 @@
-<section class="c-contact">
+<section class="c-contact js-scroll is-fadeup">
 
     <div class="c-contact__main">
     <div class="c-contact__inner">    

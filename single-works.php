@@ -8,7 +8,7 @@
 <div class="works-single__mainvisual">
     <?php the_post_thumbnail('full'); ?>
 </div>
-<section class="works-single__header">
+<section class="works-single__header js-scroll is-fadeup">
  <div class="works-single__heading">
    <h1 class="works-single__title"><?php the_title(); ?></h1>
    <div class="works-single__meta"> 
@@ -43,7 +43,7 @@
 </dl>
 </section>
 
-<section class="works-single__content">
+<section class="works-single__content js-scroll is-fadeup">
     <div class="works-single__intro">
         <h2 class="works-single__catch"><?php the_field('works_catch'); ?></h2>
         <p class="works-single__description"><?php echo nl2br(esc_html(get_field('works_description'))); ?></p>
@@ -72,7 +72,7 @@
                 $image_id, 
                 'large',
                 false,                
-                array('class' => 'js-works-thumbnail')                   
+                array('class' => 'js-works-thumbnail is-active')                   
             );
         }
 
@@ -119,7 +119,7 @@
     </div>
 </section>
 
-<section class="works-single__staff">
+<section class="works-single__staff js-scroll is-fadeup">
     <h2 class="works-single__staff-title">担当者のコメント</h2>
      <div class="works-single__staff-content">
         <div class="staff__image">

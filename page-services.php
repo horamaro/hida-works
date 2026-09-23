@@ -22,7 +22,7 @@
 <main class="services">
 
 
-<section class="c-page__intro">
+<section class="c-page__intro js-scroll is-fadeup">
 <span class="c-page__intro-en">Our Service</span>
 <h2 class="c-page__catch">飛騨の暮らしに寄り添う、家づくり。</h2>
 <p class="c-page__lead">
@@ -31,7 +31,7 @@ Hida Worksでは、新築住宅からリフォーム、店舗施工まで、<br>
 </p>    
 </section>
 
-<div class="services__list">
+<div class="services__list js-scroll is-fadeup">
     <section id="new-house" class="services__item">
         <div class="services__image">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dummy-l.webp" alt="">

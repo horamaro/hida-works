@@ -24,7 +24,30 @@
   thumbnails.forEach(function(thumbnail){
     thumbnail.addEventListener('click' ,function( ){
       mainImage.src = thumbnail.src;
-      mainImage.srcset = thumbnail.srcset;    
+      mainImage.srcset = thumbnail.srcset;
+      
+      thumbnails.forEach(function(item){
+      item.classList.remove('is-active');      
+      });
+      thumbnail.classList.add('is-active');      
     });
   });
 })();
+
+
+
+
+  (function () {
+  const targets = document.querySelectorAll('.js-scroll');
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+      entry.target.classList.add('is-show');
+      }
+    });
+  });
+  targets.forEach(function(target){
+    observer.observe(target);
+  });
+  })();
+  

@@ -24,7 +24,7 @@ $slug = $term->slug;
 </section>
 
 
-<main class="works-archive">
+<main class="works-archive js-scroll is-fadeup">
 
     <h2 class="works-archive__catch">暮らしの数だけ、<br>物語がある。-<?php echo esc_html($term->name); ?>-</h2>
     <p class="works-archive__lead">Hida Worksが手がけた、<?php echo esc_html($term->name); ?>の施工事例をご紹介します。</p>

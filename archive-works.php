@@ -19,7 +19,7 @@
 </section>
 
 
-<main class="works-archive">
+<main class="works-archive js-scroll is-fadeup">
 
     <h2 class="works-archive__catch">暮らしの数だけ、<br>物語がある。</h2>
     <p class="works-archive__lead">Hida Worksが手がけた、住宅・リフォーム・店舗などの施工事例をご紹介します。</p>

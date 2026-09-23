@@ -20,7 +20,7 @@
 
 
 <main class="news">
-    <div class="news__inner">
+    <div class="news__inner js-scroll is-fadeup">
 
     <h2 class="news__heading">お知らせ一覧</h2>
 

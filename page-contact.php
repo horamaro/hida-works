@@ -19,7 +19,7 @@
 </section>
 
 
-<main class="contact">
+<main class="contact js-scroll is-fadeup">
 
     <section class="c-page__intro">
     <h2 class="c-page__catch">家づくりのこと、<br>ご相談ください。</h2>

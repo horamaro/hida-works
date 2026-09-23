@@ -22,7 +22,7 @@
 <main class="c-page">
 
 
-<section class="c-page__intro">
+<section class="c-page__intro js-scroll is-fadeup">
 <span class="c-page__intro-en">Our Philosophy</span>
 <h2 class="c-page__catch">飛騨で、永く愛される家を。</h2>
 <p class="c-page__lead">
@@ -36,7 +36,7 @@
 
 </div>
 
-<section class="about__message c-massage-test">
+<section class="about__message c-massage-test js-scroll is-fadeup">
     <h2 class="about__message-title c-massage-test-title">
         この土地に根ざした、家づくりを。
     </h2>
@@ -54,7 +54,7 @@
     </p>
 </section>
 
-<section class="about-company c-company-test">
+<section class="about-company c-company-test js-scroll is-fadeup">
       <h2 class="c-company-test__title">会社概要</h2> 
       <div class="c-company-test__inner">
         <dl class="c-company-test__table">
