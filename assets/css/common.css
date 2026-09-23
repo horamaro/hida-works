@@ -215,7 +215,7 @@ body{
 }
 
 .site-header__logo-link img{
-    height:32px;
+    height:24px;
     width:auto;
 }
 .site-header__logo-text{
@@ -278,6 +278,11 @@ body{
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.site-footer__logo-link img{
+    height:24px;
+    width:auto;
 }
 
 .site-footer__logo-text{
@@ -544,17 +549,47 @@ body{
 }
   
 /* ==============================
-   SP
+   SP / tablet
 ============================== */
 
-@media (max-width: 767px) {
+@media (max-width: 1040px) and (min-width: 768px){
+    /*tablet-フッター*/
+
+    .site-header__nav-list{
+        gap:24px;
+      }
+
+    .site-footer__logo-name{
+        font-size: 20px;
+    }
+
+    .site-footer__logo-description{
+        font-size: 12px;
+    }
+
+    .site-footer__nav-list{
+        gap:16px;
+    }
+
+    .site-footer__nav-list{
+        gap:16px;
+        padding-right: 16px;
+    }
+    .site-footer__sns-list{
+        padding-left: 16px;
+    }
+
+  .site-footer__logo-link{
+        flex-direction:column;
+    }
+}
+
+
+@media (max-width: 767px){
+
     .admin-bar .site-header #js-btn-open {
         top: 48px;/*プレビュー黒バー対策*/
     }
-}
-@media (max-width: 767px){
-
-
     .c-section-heading{
         font-size: 1.75rem;
     }

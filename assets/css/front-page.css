@@ -350,13 +350,21 @@
 
 .news__visual{
     position: relative;
+    overflow:hidden;
+}
+
+.news__visual img{
+    object-fit:cover;
+    wodth:100%;
+    height:100%;
 }
 
 .news__visual-text{
     position: absolute;
-    top:50%; 
-    left:50%;
-    transform: translate( -50% ,-50%);
+    top:50%;
+    left:0;
+    right:0;    
+    transform: translateY(-50%);
     text-align: center;
 }
 
@@ -364,7 +372,7 @@
 .news__visual-copy{
     font-size:1.25rem ;
     font-weight: 600;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 8px;
 }
 
@@ -383,8 +391,19 @@
 
 
 /* ==============================
-   SP
+   SP / tablet
 ============================== */
+
+/* tablet */
+@media (max-width: 1040px) and (min-width: 768px) {
+    .about {
+        grid-template-columns: 3fr 2fr;
+      }
+    
+      .about .about__image-main {
+        grid-column: 1 / -1;
+      }
+  }
 
 
 @media (max-width: 767px) {
@@ -437,9 +456,7 @@
         grid-template-columns: 1fr;
         padding: 0 var(--side-padding-sp);        
     }
-    .service__card{
 
-    }
     /* sp-works list */
     .works__header{
         padding: 0 var(--side-padding-sp);        
