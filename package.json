@@ -1,0 +1,24 @@
+{
+  "name": "hida-works",
+  "version": "1.0.0",
+  "description": "飛騨地域の架空の建築会社をテーマに制作した、\r WordPressオリジナルテーマのポートフォリオサイトです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horamaro/hida-works.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/horamaro/hida-works/issues"
+  },
+  "homepage": "https://github.com/horamaro/hida-works#readme",
+  "devDependencies": {
+    "sass": "^1.105.0"
+  }
+}

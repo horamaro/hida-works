@@ -1,0 +1,36 @@
+$breakpoint-sp:767px;
+
+.works-archive{
+    width:100%;
+    max-width: var(--container-width);
+    margin: 0 auto 80px;
+    padding-inline: var(--side-padding-pc); 
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:80px;
+    }
+
+    &__catch{
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+
+    &__lead{
+        margin-bottom: 24px;   
+    }
+
+
+// SP
+    @media (max-width: $breakpoint-sp){
+        &__list{
+            gap:16px;        
+        }   
+    }
+ 
+}
+
+
+
+
