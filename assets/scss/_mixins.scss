@@ -1,0 +1,13 @@
+@use "variables";
+
+@mixin sp {
+    @media (max-width: variables.$breakpoint-sp) {
+        @content;
+    }
+}
+
+//@mixin mq($width){
+//    @media (max-width: $width) {
+//        @content;        
+//    }
+//}

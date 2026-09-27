@@ -1,4 +1,4 @@
-@use "variables";
+@use "mixins";
 
 .works-archive{
     width:100%;
@@ -20,10 +20,9 @@
     &__lead{
         margin-bottom: 24px;   
     }
-// ==============================
-// SP
-// ==============================
-    @media (max-width: variables.$breakpoint-sp){
+
+// SP==============================
+    @include mixins.sp{
         &__list{
             gap:16px;        
         }   
