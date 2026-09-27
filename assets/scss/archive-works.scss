@@ -1,4 +1,4 @@
-$breakpoint-sp:767px;
+@use "variables";
 
 .works-archive{
     width:100%;
@@ -23,7 +23,7 @@ $breakpoint-sp:767px;
 // ==============================
 // SP
 // ==============================
-    @media (max-width: $breakpoint-sp){
+    @media (max-width: variables.$breakpoint-sp){
         &__list{
             gap:16px;        
         }   
